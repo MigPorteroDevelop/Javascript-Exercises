@@ -1,0 +1,18 @@
+<html>
+  <script>
+    //4
+
+    let parameter = prompt("Introduce a number:");
+
+    function fizzbuzz(){
+        let result = ((parameter % 3) == 0 && (parameter % 5 == 0)) ? alert("Number introduced: " + parameter) :
+        ((parameter % 3) !== 0 && (parameter % 5 !== 0)) && !isNaN(parameter) ? alert("FizzBuzz") :
+        ((parameter % 3) == 0) ? alert("Fizz") :
+        ((parameter % 5) == 0) ? alert("Buzz") :       
+        (isNaN(parameter)) ? alert("NaN - Please, input a number") : 
+        alert("Doesn't work here");
+    }
+
+    fizzbuzz(parameter);
+  </script>
+</html>
