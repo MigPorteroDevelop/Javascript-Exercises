@@ -1,0 +1,33 @@
+<html>
+  <script>
+    //5
+
+    let speed = prompt("Wich is your speed?");
+    let speedLimit = 70;
+    let kmPoint = 5;
+    let point = 0;
+
+    function speedControl() {
+      //if speedLimit <=70, we write -> Good safe driving
+      if (speed <= 70) {
+        alert("Good safe driving");
+        //if speed > 70 -> each 5km over, +1 point
+      } else if (speed > speedLimit) {
+        let point = (speed - speedLimit) / kmPoint;
+        alert(point);
+        //if points < 10, print limit crossed || > 10, license suspended
+        if (point < 10) {
+          alert(`"Speed Limit Crossed by Penalty Point: " ${point}`);
+        } else {
+          alert("License suspended");
+        }
+        //if speed > 120
+      } else if (speed > 120) {
+        alert("License suspended");
+      } else {
+        return;
+      }
+    }
+    speedControl(speed);
+  </script>
+</html>
