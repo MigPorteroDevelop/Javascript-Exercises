@@ -1,0 +1,32 @@
+<html>
+  <script>
+    //5
+
+    function checkNumber() {
+      let number;
+      let arrayNumbers = [];
+
+      do {
+        let entry = prompt("Introduce a number");
+        number = parseInt(entry);
+
+        if (!isNaN(number)) {
+          arrayNumbers.push(number);
+          console.log(arrayNumbers);
+        } else {
+          console.log("Not a number");
+        }
+      } while (!isNaN(number));
+
+      for (let i = 0; i < arrayNumbers.length; i++) {
+        if (arrayNumbers[i] % 2 === 0) {
+          console.log(arrayNumbers[i] + " Par");
+        } else {
+          console.log(arrayNumbers[i] + " Impar");
+        }
+      }
+    }
+
+    checkNumber();
+  </script>
+</html>
