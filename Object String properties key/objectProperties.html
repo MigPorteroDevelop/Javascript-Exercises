@@ -1,5 +1,30 @@
 <html>
   <script>
-    
+    const people = [
+      {
+        name: "Miguel",
+        height: "174",
+        eyes: "Blue",
+      },
+      {
+        name: "Ana",
+        height: 160,
+        eyes: "Brown",
+      },
+    ];
+
+    function checkString() {
+      for (let i = 0; i < people.length; i++) {
+        for (prop in people[i]) {
+          if (typeof people[i][prop] === "string") {
+            alert(people[i][prop]);
+          } else {
+            alert("Not a string");
+          }
+        }
+      }
+    }
+
+    checkString(people);
   </script>
 </html>
