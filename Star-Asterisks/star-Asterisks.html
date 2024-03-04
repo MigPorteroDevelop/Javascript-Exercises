@@ -1,0 +1,19 @@
+<html>
+  <script>
+    let rows = prompt("introduce a number of rows");
+    rows = Number(rows);
+
+    function asterisksPatern() {
+      for (i = 1; i <= rows; i++) {
+        //console.log(i);
+        let patern = "";
+        for (j = 0; j < i; j++) {
+          patern += "*";
+        }
+        console.log(patern);
+      }
+    }
+
+    asterisksPatern(rows);
+  </script>
+</html>
